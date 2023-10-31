@@ -43,7 +43,7 @@ export default function Toolbar({setTab}) {
   return (
     <div className="toolbar">
       <Link to='game' onClick={handleTabClick}>Game</Link>
-      <Link to='redeem' onClick={handleTabClick}>Redeem</Link>
+      {/* <Link to='redeem' onClick={handleTabClick}>Redeem</Link> */}
       <div className="logo" onClick={user === undefined ? menuClick : null}>
         <LogoLink to='game' className="logo-link" />
       </div>

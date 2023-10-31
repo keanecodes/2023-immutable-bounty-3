@@ -1,8 +1,8 @@
 import { useState } from 'react'
-// import GameHeader from '../components/GameHeader'
+import GameHeader from './GameHeader'
 import GameInstance from './GameInstance'
-// import GamePrompt from '../components/GamePrompt'
-// import GameWorldStation from '../components/GameWorldStation'
+import GamePrompt from './GamePrompt'
+import GameWorldStation from './GameWorldStation'
 
 export default function GameWrapper() {
   const [game, setGame] = useState(null)
@@ -11,13 +11,14 @@ export default function GameWrapper() {
 
   return (
     <>
-      {/* <GameHeader render={render} setRender={setRender}/> */}
+      <GameHeader render={render} setRender={setRender}/>
       <div className="task-wrapper">
-        {/* <GameWorldStation setRender={setRender}/> : <div style={{flex:1}}/> */}
+        {/* <GameWorldStation setRender={setRender}/>  */}
+        <div style={{flex:1}}/>
         <div id="phaser">
           <GameInstance setGame={attachGame} game={game}/>
         </div>
-        {/* <GamePrompt/> : <div style={{flex:1}}/> */}
+        <GamePrompt/> <div style={{flex:1}}/>
       </div>
     </>
   )
