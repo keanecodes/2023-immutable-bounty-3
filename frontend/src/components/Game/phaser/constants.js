@@ -1,0 +1,60 @@
+export const PLAYER_SPRITE_WIDTH = 84;
+export const PLAYER_SPRITE_HEIGHT = 128;
+export const PLAYER_HEIGHT = 50;
+export const PLAYER_WIDTH = 37;
+export const PLAYER_SPEED = 5;
+
+export const SKELD_SHIP_WIDTH = 2160;
+export const SKELD_SHIP_HEIGHT = 1166;
+export const SKELD_PLAYER_START_X = 330;
+export const SKELD_PLAYER_START_Y = 100;
+export const SKELD_NPC_START_X = -230;
+export const SKELD_NPC_START_Y = 50; // a lot of wires
+export const SKELD_NPC_START_X_1 = -500;
+export const SKELD_NPC_START_Y_1 = 500; // near engine.
+export const SKELD_NPC_START_X_2 = -600;
+export const SKELD_NPC_START_Y_2 = -400; // also near the engine.
+
+export const MIRA_SHIP_WIDTH = 2160;
+export const MIRA_SHIP_HEIGHT = 1754;
+export const MIRA_PLAYER_START_X = -670;
+export const MIRA_PLAYER_START_Y = 500;
+export const MIRA_NPC_START_X = -100; // Before the long corridor
+export const MIRA_NPC_START_Y = 600;
+export const MIRA_NPC_START_X_1 = 900;
+export const MIRA_NPC_START_Y_1 = 600; // near emergency button
+export const MIRA_NPC_START_X_2 = -300;
+export const MIRA_NPC_START_Y_2 = 100; // Near a big claw! Top of map
+
+export const POLUS_SHIP_WIDTH = 2160;
+export const POLUS_SHIP_HEIGHT = 1494;
+export const POLUS_PLAYER_START_X = -210;
+export const POLUS_PLAYER_START_Y = -600;
+export const POLUS_NPC_START_X = -300; //near 2 snowmen
+export const POLUS_NPC_START_Y = 660;
+export const POLUS_NPC_START_X_1 = -600; //near the cctv room
+export const POLUS_NPC_START_Y_1 = 60;
+export const POLUS_NPC_START_X_2 = 200;
+export const POLUS_NPC_START_Y_2 = 590; //near bookshelf
+
+export const AIRSHIP_SHIP_WIDTH = 2160;
+export const AIRSHIP_SHIP_HEIGHT = 1950;
+export const AIRSHIP_PLAYER_START_X = 180;
+export const AIRSHIP_PLAYER_START_Y = -140;
+export const AIRSHIP_NPC_START_X = -300;
+export const AIRSHIP_NPC_START_Y = 800;
+export const AIRSHIP_NPC_START_X_1 = -300;
+export const AIRSHIP_NPC_START_Y_1 = 800;
+export const AIRSHIP_NPC_START_X_2 = -300;
+export const AIRSHIP_NPC_START_Y_2 = 800;
+
+export const ISLAND_SHIP_WIDTH = 2160;
+export const ISLAND_SHIP_HEIGHT = 1246;
+export const ISLAND_PLAYER_START_X = 140;
+export const ISLAND_PLAYER_START_Y = -200;
+export const ISLAND_NPC_START_X = -360; //standing in a corridor
+export const ISLAND_NPC_START_Y = 400;
+export const ISLAND_NPC_START_X_1 = 700;
+export const ISLAND_NPC_START_Y_1 = -180; //near a cross road
+export const ISLAND_NPC_START_X_2 = 420;
+export const ISLAND_NPC_START_Y_2 = 520; // neaar bookshelf
