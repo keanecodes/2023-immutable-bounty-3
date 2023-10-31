@@ -108,6 +108,8 @@ node_modules/
 .yarn-integrity
 
 # dotenv environment variables file
+.env.development
+.env.production
 .env
 firebase-adminsdk.json
 config.js

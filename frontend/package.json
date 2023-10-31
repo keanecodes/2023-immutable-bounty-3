@@ -1,60 +1,26 @@
 {
-  "name": "phaser3",
-  "version": "0.0.1",
-  "description": "A Phaser 3 Project",
-  "main": "src/index.js",
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "webpack --config webpack/prod.js ",
-    "start": "webpack-dev-server --host 0.0.0.0 --config webpack/base.js --open"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/photonstorm/phaser3-project-template.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
-  "homepage": "",
-  "devDependencies": {
-    "@babel/core": "^7.7.2",
-    "@babel/plugin-proposal-class-properties": "^7.12.13",
-    "@babel/plugin-transform-modules-commonjs": "^7.12.13",
-    "@babel/plugin-transform-runtime": "^7.12.15",
-    "@babel/preset-env": "^7.7.1",
-    "@babel/preset-react": "^7.12.13",
-    "babel-loader": "^8.0.6",
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^5.0.2",
-    "file-loader": "^4.2.0",
-    "html-webpack-plugin": "^3.2.0",
-    "image-webpack-loader": "^7.0.1",
-    "path": "^0.12.7",
-    "png-js": "^1.0.0",
-    "raw-loader": "^3.1.0",
-    "style-loader": "^2.0.0",
-    "terser-webpack-plugin": "^2.2.1",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0",
-    "webpack-merge": "^4.2.2"
+    "dev": "vite --port 5003 --strictPort --mode development",
+    "build": "vite build --mode production",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "firebase": "^8.2.7",
-    "history": "^4.10.1",
-    "jwt-decode": "^3.1.2",
-    "phaser": "^3.53.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-dropdown": "^1.9.2",
-    "react-icons": "^4.2.0",
-    "react-router-dom": "^5.2.0",
-    "recoil": "^0.1.2",
-    "styled-components": "^5.2.3"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not op_mini all"
-  ]
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "vite": "^4.4.5"
+  }
 }
