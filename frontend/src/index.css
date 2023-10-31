@@ -279,6 +279,9 @@ canvas {
   .toolbar a:hover {
     border-bottom: 2px solid var(--toolbar-underline-color);
   }
+  .toolbar .logo a:hover {
+    border-bottom: none;
+  }
   .content::after, .sb-task-dialog-container, .border {
     margin: var(--landscape-screen-size);
   }
