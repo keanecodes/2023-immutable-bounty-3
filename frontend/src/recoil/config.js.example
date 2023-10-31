@@ -1,0 +1,12 @@
+// https://github.com/keanecodes/cz3003-space/wiki/Getting-APIs#front-end
+export const firebaseConfig = {
+    apiKey: "<SENSITIVE INFORMATION>",
+    authDomain: "<SENSITIVE INFORMATION>.firebaseapp.com",
+    databaseURL: "https://<SENSITIVE INFORMATION>.firebaseio.com",
+    projectId: "<SENSITIVE INFORMATION>",
+    storageBucket: "<SENSITIVE INFORMATION>",
+    messagingSenderId: "<SENSITIVE INFORMATION>",
+    appId: "<SENSITIVE INFORMATION>",
+  };
+  
+  export const API_BASE_URL = "https://<SENSITIVE INFORMATION>.cloudfunctions.net/api";
