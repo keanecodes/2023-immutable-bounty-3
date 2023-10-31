@@ -51,5 +51,10 @@
     "react-router-dom": "^5.2.0",
     "recoil": "^0.1.2",
     "styled-components": "^5.2.3"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
 }
