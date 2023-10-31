@@ -1,11 +1,6 @@
 import React from 'react'
-// import { useRecoilValue } from 'recoil'
-// import { userAuth } from '../recoil/users'
 
 export default function GamePrompt() {
-  // const auth = useRecoilValue(userAuth)
-  // const isAuthUser = auth?.isAuthenticated
-  // const isAuthProf = isAuthUser && auth?.user.bio.isProfessor
 
   return (
     <div className="task-prompt">

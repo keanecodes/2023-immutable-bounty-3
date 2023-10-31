@@ -13,7 +13,7 @@ import { getApps, initializeApp } from 'firebase/app';
 import "firebase/database";
 import { getDatabase, ref, onValue, update, set, onDisconnect } from "firebase/database";
 import "firebase/firestore";
-import { getFirestore, doc, getDoc } from "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
 import { firebaseConfig } from "./config";
 
 let pressedKeys = [];
@@ -60,7 +60,6 @@ export class MyGame extends Phaser.Scene {
     });
 
     if (this.game.config.user) {
-      console.log("======== config.user", this.game.config.user)
       this.playerId = this.game.config.user.userId;
       this.playerName = this.game.config.user.displayName;
       this.playerSpriteColor = this.game.config.user.sprite;
@@ -318,7 +317,6 @@ export class MyGame extends Phaser.Scene {
       Math.round(this.player.sprite.x) != this.previousX ||
       Math.round(this.player.sprite.y) != this.previousY
     ) {
-      console.log("======== this.roomAddress", this.roomAddress)
       set(ref(this.RTdatabase, this.roomAddress + this.playerId), {
         playerId: this.playerId,
         playerName: this.playerName,

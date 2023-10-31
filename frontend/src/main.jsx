@@ -9,7 +9,6 @@ import {
 import App from './components/App.jsx'
 import Callback from './components/Callback.jsx'
 import GameWrapper from './components/Game/index.jsx'
-import Redeem from './components/Redeem.jsx';
 import './index.css'
 
 const router = createBrowserRouter(
@@ -17,7 +16,6 @@ const router = createBrowserRouter(
     <Route>
       <Route path="/" element={<App/>}>
         <Route path="game" element={<GameWrapper />}/>
-        <Route path="redeem" element={<Redeem />}/>
       </Route>
       <Route path="callback" element={<Callback />} />
       <Route path="*" element={<App />} />

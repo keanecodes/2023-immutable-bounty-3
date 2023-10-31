@@ -13,12 +13,11 @@ export default function GameWrapper() {
     <>
       <GameHeader render={render} setRender={setRender}/>
       <div className="task-wrapper">
-        {/* <GameWorldStation setRender={setRender}/>  */}
-        <div style={{flex:1}}/>
+        <GameWorldStation setRender={setRender}/> 
         <div id="phaser">
           <GameInstance setGame={attachGame} game={game}/>
         </div>
-        <GamePrompt/> <div style={{flex:1}}/>
+        <GamePrompt/>
       </div>
     </>
   )

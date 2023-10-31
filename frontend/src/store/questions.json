@@ -1,0 +1,214 @@
+
+
+{
+    "systemrequirements": {
+        "topic": "Requirements Engineering",
+        "world": "The Skeld",
+        "functionalrequirements": {
+            "hint": "There's wires everywhere. I'm trapped!!",
+            "difficulty": "easy",
+            "1X1vyqAQOlP3YllSv0Fz": {
+                "correct_answer": "Binary",
+                "incorrect_answers": ["C++", "Java", "Python"],
+                "difficulty": "easy",
+                "question": "If you were to code software in this language you'd only be able to type 1s and 0s."
+            },
+            "irjwcpSWTwIB6XLFKufg": {
+                "correct_answer": "None of the above",
+                "incorrect_answers": ["Maintainability", "Portability", "Robustness"],
+                "difficulty": "easy",
+                "question": "Which one of the following is a functional requirement ?"
+            }
+        },
+        "nonfunctionalrequirements": {
+            "difficulty": "medium",
+            "hint": "I like chilling by the engine..",
+            "0NMpupvLb4qzp4QgSMxm": {
+                "correct_answer": "Supportability",
+                "incorrect_answers": ["Usability", "Reliability", "Performance"],
+                "difficulty": "medium",
+                "question": "Which non-functional requirement is the following an example of - 'The database must be replaceable with any commercial product supporting standard SQL queries."
+            },
+            "EHbbFLGplnKMB43ZvoIg": {
+                "correct_answer": "How well does the system do it?",
+                "incorrect_answers": ["When does the system do it?", "Where does the system do it?", "What does the system do?"],
+                "difficulty": "medium",
+                "question": "Which one of the following is a functional requirement?"
+            }
+        },
+        "usecases": {
+            "difficulty": "hard",
+            "hint": "I too like chilling by the engine, but not the same one as the other guy.",
+            "0NMpupvLb4qzp4QgSMxm": {
+                "correct_answer": "Overlap",
+                "incorrect_answers": ["Links", "Dependencies", "Separation"],
+                "difficulty": "hard",
+                "question": "The include association is used when there are __________ among cases."
+            },
+            "EHbbFLGplnKMB43ZvoIg": {
+                "correct_answer": "Exceptional",
+                "incorrect_answers": ["Normal", "Common", "Group"],
+                "difficulty": "hard",
+                "question": "Extends are only used in the parent use case in _________ circumstances."
+            }
+        }
+    },
+    "systemarchitecture": {
+        "topic": "Architectural Design",
+        "world": "Mira HQ",
+        "planning": {
+            "hint": "I'm before a long corridor!",
+            "difficulty": "easy",
+            "1X1vyqAQOlP3YllSv0Fz": {
+                "correct_answer": "",
+                "incorrect_answers": ["C++", "Java", "Python"],
+                "difficulty": "",
+                "question": ""
+            },
+            "irjwcpSWTwIB6XLFKufg": {
+                "correct_answer": "",
+                "incorrect_answers": ["Maintainability", "Portability", "Robustness"],
+                "difficulty": "easy",
+                "question": "Which one of the following is a functional requirement ?"
+            }
+        },
+        "requirementanalysis": {
+            "difficulty": "medium",
+            "hint": "Where's everybody at?",
+            "0NMpupvLb4qzp4QgSMxm": {
+                "correct_answer": "Supportability",
+                "incorrect_answers": ["Usability", "Reliability", "Performance"],
+                "difficulty": "medium",
+                "question": "Which one of the following is a functional requirement ?"
+            },
+            "EHbbFLGplnKMB43ZvoIg": {
+                "correct_answer": "Supportability",
+                "incorrect_answers": ["Usability", "Reliability", "Performance"],
+                "difficulty": "medium",
+                "question": "Which one of the following is a functional requirement?"
+            }
+        },
+        "riskanalysis": {
+            "difficulty": "hard",
+            "hint": "I'm gonna take this big claw near the top of the map.",
+            "0NMpupvLb4qzp4QgSMxm": {
+                "correct_answer": "Overlap",
+                "incorrect_answers": ["Links", "Dependencies", "Separation"],
+                "difficulty": "hard",
+                "question": "The include association is used when there are __________ among cases."
+            },
+            "EHbbFLGplnKMB43ZvoIg": {
+                "correct_answer": "Exceptional",
+                "incorrect_answers": ["Normal", "Common", "Group"],
+                "difficulty": "hard",
+                "question": "Extends are only used in the parent use case in _________ circumstances."
+            }
+        }
+    },
+    "designandimplementation": {
+        "topic": "Subsystem Implementation",
+        "world": "Polus",
+        "ObjectOrientedDesign": {
+            "hint": "Do you want to build a snowman!",
+            "difficulty": "medium",
+            "1X1vyqAQOlP3YllSv0Fz": {
+                "correct_answer": "",
+                "incorrect_answers": ["C++", "Java", "Python"],
+                "difficulty": "",
+                "question": ""
+            },
+            "irjwcpSWTwIB6XLFKufg": {
+                "correct_answer": "",
+                "incorrect_answers": ["Maintainability", "Portability", "Robustness"],
+                "difficulty": "easy",
+                "question": "Which one of the following is a functional requirement ?"
+            }
+        },
+        "UML": {
+            "difficulty": "easy",
+            "hint": "I'm chilling by the CCTVs. Don't do anything funny.",
+            "0NMpupvLb4qzp4QgSMxm": {
+                "correct_answer": "Supportability",
+                "incorrect_answers": ["Usability", "Reliability", "Performance"],
+                "difficulty": "medium",
+                "question": "Which one of the following is a functional requirement ?"
+            },
+            "EHbbFLGplnKMB43ZvoIg": {
+                "correct_answer": "Supportability",
+                "incorrect_answers": ["Usability", "Reliability", "Performance"],
+                "difficulty": "medium",
+                "question": "Which one of the following is a functional requirement?"
+            }
+        },
+        "analysismodelling": {
+            "difficulty": "hard",
+            "hint": "I'm near the bookshelf! Love reading yo.",
+            "0NMpupvLb4qzp4QgSMxm": {
+                "correct_answer": "Overlap",
+                "incorrect_answers": ["Links", "Dependencies", "Separation"],
+                "difficulty": "hard",
+                "question": "The include association is used when there are __________ among cases."
+            },
+            "EHbbFLGplnKMB43ZvoIg": {
+                "correct_answer": "Exceptional",
+                "incorrect_answers": ["Normal", "Common", "Group"],
+                "difficulty": "hard",
+                "question": "Extends are only used in the parent use case in _________ circumstances."
+            }
+        }
+    },
+    "systemquality": {
+        "topic": "Software Testing",
+        "world": "Island",
+        "System maintainence": {
+            "hint": "Standing along a corridor! Come find me.",
+            "difficulty": "",
+            "1X1vyqAQOlP3YllSv0Fz": {
+                "correct_answer": "",
+                "incorrect_answers": ["C++", "Java", "Python"],
+                "difficulty": "",
+                "question": ""
+            },
+            "irjwcpSWTwIB6XLFKufg": {
+                "correct_answer": "",
+                "incorrect_answers": ["Maintainability", "Portability", "Robustness"],
+                "difficulty": "easy",
+                "question": "Which one of the following is a functional requirement ?"
+            }
+        },
+        "qualityassurance": {
+            "difficulty": "medium",
+            "hint": "To turn left or turn right...",
+            "0NMpupvLb4qzp4QgSMxm": {
+                "correct_answer": "Supportability",
+                "incorrect_answers": ["Usability", "Reliability", "Performance"],
+                "difficulty": "medium",
+                "question": "Which one of the following is a functional requirement ?"
+            },
+            "EHbbFLGplnKMB43ZvoIg": {
+                "correct_answer": "Supportability",
+                "incorrect_answers": ["Usability", "Reliability", "Performance"],
+                "difficulty": "medium",
+                "question": "Which one of the following is a functional requirement?"
+            }
+        },
+        "softwaretesting": {
+            "difficulty": "hard",
+            "hint": "Reading is my favorite hobby.",
+            "0NMpupvLb4qzp4QgSMxm": {
+                "correct_answer": "Overlap",
+                "incorrect_answers": ["Links", "Dependencies", "Separation"],
+                "difficulty": "hard",
+                "question": "The include association is used when there are __________ among cases."
+            },
+            "EHbbFLGplnKMB43ZvoIg": {
+                "correct_answer": "Exceptional",
+                "incorrect_answers": ["Normal", "Common", "Group"],
+                "difficulty": "hard",
+                "question": "Extends are only used in the parent use case in _________ circumstances."
+            }
+        }
+    }
+}
+
+

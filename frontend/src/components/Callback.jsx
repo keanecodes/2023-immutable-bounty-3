@@ -1,4 +1,4 @@
-import { passportInstance } from "../immutable";
+import { passportInstance } from "../store/immutable";
 
 export default function CallbackPage() {
   window.addEventListener("load", function () {

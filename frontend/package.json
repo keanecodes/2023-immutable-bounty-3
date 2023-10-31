@@ -10,14 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@imtbl/contracts": "^2.0.0",
     "@imtbl/sdk": "^0.28.3",
+    "ethers": "^5.7.2",
     "events": "^3.3.0",
     "firebase": "^10.5.2",
     "phaser": "^3.60.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.17.0",
-    "styled-components": "^6.1.0"
+    "styled-components": "^6.1.0",
+    "zustand": "^4.4.5"
   },
   "devDependencies": {
     "@types/events": "^3.0.2",

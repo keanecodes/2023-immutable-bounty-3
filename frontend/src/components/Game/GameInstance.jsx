@@ -10,11 +10,10 @@ export default function GameInstance({setGame, game }) {
     // if (game == null && auth.isAuthenticated) {
     if (game == null) {
       const user = {
-        "displayName": "user",
+        "displayName": "",
         "playerStartY": 100,
         "sprite": "pWHT",
         "playerStartX": 330,
-        "createdOn": "2023-10-29T23:29:07.282Z",
         "userId": "b2ZmdFPAbWbbT78Eh0Wdrqraggp2",
         "email": "USER@eMAIL.COM",
         "score": 50,

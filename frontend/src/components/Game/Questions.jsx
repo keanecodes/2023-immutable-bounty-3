@@ -3,31 +3,18 @@ import Questionare from './Questionare';
 import axios from 'axios'
 
 
-const Questions = ({auth, tries, setTries, handlePoints,
+const Questions = ({tries, setTries, handlePoints,
                      returnDifficulty, handleShowQuestions, 
                      topic, subtopic, progress, setProgress, setRender}) => {
 
-    // const dispatch = useDispatch();
     const [questions, setQuestions] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [score, setScore] = useState(0);
     const [gameEnded, setGameEnded] = useState(false);
 
-    // const ids = useSelector((state) => (state.form)); 
-  
-    // console.log(level, topic, subtopic); //kne: please try to remove testing console logs where possible
-    
     useEffect(() => {
-        // fetch(API_URL)
-        //     .then(res => res.json())
-        //      .then(data => {
-        //          setQuestions(data.results);
-        //         // console.log(data);
-        //      });
         axios.get("/questions",{ params: { topic, subtopic } })
                 .then(data => {
-                    // console.log(data);
-                    // console.log(cleanUp(data)); //kne: please try to remove testing console logs where possible
                     setQuestions(cleanUp(data));
                 });        
     }, []);
@@ -36,23 +23,16 @@ const Questions = ({auth, tries, setTries, handlePoints,
       if(gameEnded === true)
       { 
         if(score === questions.length) {
-          // console.log(subtopic); //kne: please try to remove testing console logs where possible
           setProgress(progress.concat(subtopic));
-          let id = auth.user.bio.userId;
           let points = handlePoints(returnDifficulty(subtopic))
-          axios.post("/user/update/score",{ params: { id, points } });
-          // axios.post("/user/update/checkpoint",{ params: { topic, subtopic } });
           
           console.log(tries+" "+questions.length)
           let totalTries = Math.round(tries/questions.length);
 
           console.log(totalTries)
-          axios.post("/user/update/progress",{ params: { topic, subtopic, totalTries, points, id } });
 
           setTries(0);
           setRender(true);
-          // console.log(auth.user.bio.userId); //kne: please try to remove testing console logs where possible
-          // console.log(progress); //kne: please try to remove testing console logs where possible
         }
       }
     }, [gameEnded])
@@ -107,6 +87,13 @@ const Questions = ({auth, tries, setTries, handlePoints,
           {gameEnded ? (
             <div>
               <h1>You got {score}/{questions.length}</h1>
+              <div className="options-selection-container">
+                <button
+                  onClick={() => {console.log}} 
+                  className="glow-border">
+                    Mint your reward
+                </button>
+              </div>
             </div>
           ): questions.length > 0 ? (
               <Questionare data={questions[currentIndex]} handleAnswer = {handleAnswer}/>

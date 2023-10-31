@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import { passportInstance, fetchAuth } from "../immutable";
+import { passportInstance, fetchAuth } from "../store/immutable";
 
 export default function Toolbar({setTab}) {
   const [user, setUser] = useState(undefined)
@@ -15,8 +15,6 @@ export default function Toolbar({setTab}) {
       return {
         nickname: userProfile?.nickname,
         email: userProfile?.email,
-        // accessToken: accessToken,
-        // idToken: idToken,
         sub: userProfile?.sub,
       }
     });
@@ -43,7 +41,6 @@ export default function Toolbar({setTab}) {
   return (
     <div className="toolbar">
       <Link to='game' onClick={handleTabClick}>Game</Link>
-      {/* <Link to='redeem' onClick={handleTabClick}>Redeem</Link> */}
       <div className="logo" onClick={user === undefined ? menuClick : null}>
         <LogoLink to='game' className="logo-link" />
       </div>
