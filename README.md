@@ -1,5 +1,5 @@
 ### Overview
-This project showcases a Among Us x Amazing Race mashup game, a web application developed as part of a bounty project that required for the [Immutable Bounty #3: Building a Game](https://app.stackup.dev/bounty/immutable-bounty-3-building-a-game). You can take a look at the demo below:
+This project showcases a Among Us x Amazing Race mashup game, a web application developed as part of a bounty project that required for the [Immutable Bounty #3: Building a Game](https://app.stackup.dev/bounty/immutable-bounty-3-building-a-game). You can take a view the [demo on Youtube](https://youtu.be/Bgoh8b5itX4) or take a look below:
 
 
 https://github.com/keanecodes/2023-immutable-bounty-3/assets/22881005/8b842044-f415-4efa-a577-492f7c262dc8
