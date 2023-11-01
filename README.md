@@ -11,7 +11,7 @@ Space Maze was inspired by the typical Software Engineering courses, but adding 
 ### Immutable Passport integration
 Immutable Passport enhances user experience by simplifying login processes and ensuring the security of digital assets. By using it, I expedited my development time because of its SSO feature. In the original project, I had to refresh and key in the credentials every time there was a hot-reload. So I am really happy to development Immutable Passport Integration. It is also very easy to setup and robust. I'm excited to work with more Immutable Passport in the future.
 
-### Gasless experience, even when it's not on zkEVM
+### Gasless experience, even when it's on zkEVM
 the Immutable passport experience is great, however it does not allow us to use the faucet to send some test-IMX into the passport wallet. Through this small hiccup, I realised actually I can pre-mint the NFT and then transfer to the users when they initiate the minting to let them enjoy a gasless experience. So it's almost like I'm behaving as a Paymaster.
 
 
