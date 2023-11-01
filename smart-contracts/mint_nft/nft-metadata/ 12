@@ -1,0 +1,17 @@
+{
+    "id": 12,
+    "image": "https://silver-dying-wildebeest-127.mypinata.cloud/ipfs/QmcP1Pt8RzxnuhiQWXrrb6GzA21Y9pwiLXWk2REjMLbAzi/",
+    "token_id": "12",
+    "background_color": null,
+    "animation_url": null,
+    "youtube_url": null,
+    "name": "spacemaze",
+    "description": "Amazeeeeng",
+    "external_url": null,
+    "attributes": [
+     {
+      "trait_type": "Rarity",
+      "value": "Unique"
+     }
+    ]
+   }
