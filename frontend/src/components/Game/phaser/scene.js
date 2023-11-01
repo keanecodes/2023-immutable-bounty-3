@@ -69,11 +69,11 @@ export class MyGame extends Phaser.Scene {
       this.roomNumber = "LOBBY";
       if (this.game.config.user.world) {
         this.world = this.game.config.user.world;
-        console.log("here1" + sceneIdMap[this.world]);
+        // console.log("here1" + sceneIdMap[this.world]);
 
         this.PLAYER_START_X = sceneIdMap[this.world].startX;
 
-        console.log("here2" + sceneIdMap[this.world].startX);
+        // console.log("here2" + sceneIdMap[this.world].startX);
 
         this.PLAYER_START_Y = sceneIdMap[this.world].startY;
         this.NPC_START_X = sceneIdMap[this.world].npcX;
@@ -152,28 +152,28 @@ export class MyGame extends Phaser.Scene {
 
     // if(this.isProfessor==false){
     this.physics.add.collider(sprite, npcsprite1, function setCollision() {
-      console.log("Collided with npc");
+      // console.log("Collided with npc");
       // insert pop up for qsn here
       isCollided = true;
-      console.log(isCollided);
+      // console.log(isCollided);
     });
     // }
 
     // if(this.isProfessor==false){
     this.physics.add.collider(sprite, npcsprite2, function setCollision() {
-      console.log("Collided with npc 2");
+      // console.log("Collided with npc 2");
       // insert pop up for qsn here
       isCollided1 = true;
-      console.log(isCollided1);
+      // console.log(isCollided1);
     });
     // }
 
     // if (this.isProfessor==false){
     this.physics.add.collider(sprite, npcsprite3, function setCollision() {
-      console.log("Collided with npc 3");
+      // console.log("Collided with npc 3");
       // insert pop up for qsn here
       isCollided2 = true;
-      console.log(isCollided2);
+      // console.log(isCollided2);
     });
     // }
 

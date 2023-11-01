@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import Questionare from './Questionare';
 import axios from 'axios'
+import styled from 'styled-components';
+import { transfer } from '../../store/immutable';
 
 
 const Questions = ({tries, setTries, handlePoints,
@@ -11,6 +13,8 @@ const Questions = ({tries, setTries, handlePoints,
     const [currentIndex, setCurrentIndex] = useState(0);
     const [score, setScore] = useState(0);
     const [gameEnded, setGameEnded] = useState(false);
+    const [loading, setLoading] = useState(false)
+    const [txn, setTxn] = useState("")
 
     useEffect(() => {
         axios.get("/questions",{ params: { topic, subtopic } })
@@ -81,18 +85,25 @@ const Questions = ({tries, setTries, handlePoints,
           <div className="sb-task-header dashed" data-click onClick={handleShowQuestions}>
             <div className="game-header-title">
               <h2>{subtopic}</h2>
-              <div className="sb-meta">The Skeld - Room: 12091923094</div>
+              <div className="sb-meta">Map: The Skeld</div>
             </div>
           </div>
           {gameEnded ? (
-            <div>
+            <div style={{textAlign: "center"}}>
               <h1>You got {score}/{questions.length}</h1>
+              {/* <p>This question has ___ / 100 NFT free mint left.</p> */}
               <div className="options-selection-container">
-                <button
-                  onClick={() => {console.log}} 
+                <CenterMintButton
+                  onClick={async () => {
+                    setLoading(true)
+                    const txnHash = await transfer();
+                    setLoading(false)
+                    setTxn(txnHash)
+                    console.log("======== txnHash", txnHash)
+                  }} 
                   className="glow-border">
-                    Mint your reward
-                </button>
+                    {loading ? "Loading" : "Mint now"}
+                </CenterMintButton>
               </div>
             </div>
           ): questions.length > 0 ? (
@@ -109,3 +120,8 @@ const Questions = ({tries, setTries, handlePoints,
   }
 
   export default Questions;
+
+  const CenterMintButton = styled.button`
+    margin: 0 auto;
+    width: 100%;
+  `

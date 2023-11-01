@@ -13,7 +13,7 @@ export default function Entry() {
       <div className='border'>
         <div className='container' data-content={tab}>
           <Toolbar setTab={setTab}/>
-          <Outlet/>
+          {tab !== "home" && <Outlet/>}
         </div>
       </div>
     </>

@@ -2,7 +2,6 @@ import axios from 'axios'
 
 export const getSubtopics = async (topic) => {
   try {
-    console.log("====== topic", topic)
     const data = await axios.get("/subtopics", { params: topic })
     return data.data
   } catch (err) {
