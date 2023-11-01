@@ -1,5 +1,9 @@
 ### Overview
-This project showcases a Among Us x Amazing Race mashup game, a web application developed as part of a bounty project that required for the [Immutable Bounty #3: Building a Game](https://app.stackup.dev/bounty/immutable-bounty-3-building-a-game).
+This project showcases a Among Us x Amazing Race mashup game, a web application developed as part of a bounty project that required for the [Immutable Bounty #3: Building a Game](https://app.stackup.dev/bounty/immutable-bounty-3-building-a-game). You can take a look at the demo below:
+
+
+https://github.com/keanecodes/2023-immutable-bounty-3/assets/22881005/8b842044-f415-4efa-a577-492f7c262dc8
+
 
 Comprehensiveness of the Write-up:
 This write-up offers a detailed exploration of a blockchain-based game, covering key aspects that include game mechanics, smart contract functionality, and the overall playing experience. It provides a thorough explanation of how the game works and how it should be played. Furthermore, the write-up delves into the different functions of the smart contract code, giving readers a clear understanding of the underlying technology.
